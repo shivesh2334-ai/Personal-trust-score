@@ -1,4 +1,4 @@
-cd /home/claude && cat > README.md << 'EOF'
+
 # 🏥 Physician Professional Self-Assessment Tool
 
 A comprehensive self-assessment application for physicians to evaluate their patient-centered care skills based on the JAMA Neurology article "5 Questions Patients Have but Never Ask" (2018).
