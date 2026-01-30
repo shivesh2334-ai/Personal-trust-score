@@ -1,0 +1,5 @@
+#cd /home/claude && cat > requirements.txt << 'EOF'
+streamlit
+pandas
+plotly
+EOF
