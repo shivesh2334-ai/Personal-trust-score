@@ -205,7 +205,37 @@ def get_recommendations(category_scores, overall_score):
                 recommendations.append({
                     "category": category,
                     "score": score,
-< truncated lines 208-238 >
+                    "actions": [
+                        "Create protocols for discussing sensitive topics (substance use, mental health)",
+                        "Use open-ended questions to encourage patient sharing",
+                        "Demonstrate reliability by following up on every concern",
+                        "Build rapport before diving into medical history",
+                        "Show genuine concern through both words and actions"
+                    ]
+                })
+            elif "Treating Style" in category:
+                recommendations.append({
+                    "category": category,
+                    "score": score,
+                    "actions": [
+                        "Take implicit bias training",
+                        "Study health disparities in your patient population",
+                        "Regularly self-reflect on your treatment decisions across demographics",
+                        "Learn about social determinants of health",
+                        "Develop cultural competence through education and exposure"
+                    ]
+                })
+    
+    return recommendations
+
+def create_score_chart(category_scores):
+    categories = list(category_scores.keys())
+    scores = list(category_scores.values())
+    
+    # Shorten category names for display
+    short_categories = [
+        "Personal\nConnect",
+        "Trust of\nTrade",
         "Social\nTrust",
         "Treating\nStyle"
     ]
@@ -413,9 +443,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
-
-                                                  )
-                    
-                
